@@ -8,6 +8,8 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+import java.util.Comparator;
+
 @Configuration
 @EnableSwagger2
 public class DocumentationConfig {
@@ -19,4 +21,5 @@ public class DocumentationConfig {
     public ApiInfo apiInfo(){
         return new ApiInfoBuilder().title("Pokemon API").build();
     }
+
 }
